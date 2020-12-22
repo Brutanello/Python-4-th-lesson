@@ -1,1 +1,11 @@
+def fact(n):
+    for el in range(1, n+1):
+        yield el
+
+n = 10
+result = 1
+for el in fact(n):
+    result = result * el
+    print(el)
+print(f"{n}! = {result}")
 
